@@ -1,0 +1,70 @@
+# ---- 通用 ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+.venv/
+venv/
+ENV/
+env/
+
+# 打包/构建
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---- C++/C ----
+# 编译输出
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.lib
+*.exe
+*.out
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ---- IDE & 编辑器 ----
+# VSCode
+.vscode/
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# ---- 数据/测试文件 ----
+*.db
+*.sqlite
+*.sqlite3
+*.json
+*.csv
+*.pcap
+
+# ---- 项目特定 ----
+# PyInstaller 打包
+*.spec
+
+# Qt Designer
+*.pro.user
+*.qrc.dep
+
+# 单元测试缓存
+.coverage
+.pytest_cache/
