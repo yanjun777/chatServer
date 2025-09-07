@@ -1,5 +1,5 @@
-#include "chatserver.h"
-#include "chatservice.h"
+#include "chatserver.hpp"
+#include "chatservice.hpp"
 #include <functional>
 #include <iostream>
 #include <string>
@@ -49,6 +49,7 @@ void ChatServer::onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp 
     json js = json::parse(msg); // 反序列化 
 
     auto msgHandler = ChatService::getInstance()->getHandler(js["msgid"].get<int>()); 
+    // cout << "getHandler success" << endl;
     msgHandler(conn, js, time); 
 
 
