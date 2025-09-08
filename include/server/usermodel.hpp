@@ -3,6 +3,7 @@
 
 #include "user.hpp"
 // User表的增删改查 
+// DRM 
 class UserModel{
 public:
     UserModel();
@@ -12,6 +13,7 @@ public:
     bool updateState(User &user);
     User query(int id);
     bool remove(int id); 
+    void resetState();  
 };
 
 #endif

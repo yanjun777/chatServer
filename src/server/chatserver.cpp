@@ -37,6 +37,7 @@ void ChatServer::onConnection(const TcpConnectionPtr& conn)
     {
         cout << "new connection: " << conn->peerAddress().toIpPort() << endl;
     }else{
+        ChatService::getInstance()->clientCloseException(conn); 
         cout << "connection close: " << conn->peerAddress().toIpPort() << endl;
         conn->shutdown(); 
     }
@@ -52,5 +53,5 @@ void ChatServer::onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp 
     // cout << "getHandler success" << endl;
     msgHandler(conn, js, time); 
 
-
 }
+

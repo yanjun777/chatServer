@@ -5,6 +5,7 @@
 
 using namespace std;
 // 在线用户表 ORM 对象关系映射 todo 
+// DOM 
 class User{
 public:
     User(int id=-1, string name="", string password="", string state="offline"){
@@ -25,7 +26,7 @@ public:
     string getPassword(){ return this->_password; }
     string getState(){ return this->_state; }
 
-private:
+protected:
     int _id;
     string _name;
     string _password;

@@ -1,0 +1,17 @@
+登陆：
+{"msgid":1,"id":22,"password":"123456"}
+{"msgid":1,"id":13,"password":"123456"}
+{"msgid":1,"id":23,"password":"123456"}
+注册：
+{"msgid":3,"name":"yj","password":"123456"}
+
+发送：
+{"msgid":5,"id":23,"from":"yj","to" :22,"msg":"love you babe"}
+
+添加好友
+{"msgid":6,"id":13,"friendid":23}
+
+cd .. && cd bin/ && ./Chatserver
+telnet 127.0.0.1 6000
+
+
